@@ -1,0 +1,91 @@
+html {
+    height:100%;
+}
+body {
+    margin:0%;
+}
+
+/*cabeçalho*/
+#logo {
+    width:60px;
+    float:inline-start;
+}
+a {
+    text-decoration:none !important;
+    color:rgb(40, 55, 40);
+}
+ul {
+    list-style-type: none;
+}
+li {
+    margin-left: 30px;
+}
+nav a:hover {
+    color:white;
+}
+.voltar {
+    float:inline-start;
+    color:rgb(40, 55, 40);
+    position:fixed;
+    left:1px;
+}
+.imagemPrincipal {
+    max-width: 100%;
+    width:100%;
+    height:100px;
+    margin: 0 auto;
+}
+.descricao {
+    text-align: center;
+    margin: 0;
+}
+
+/*lateral*/
+.abrirLateral {
+    float:inline-end;
+}
+#menu {
+    font-size:15px;
+    line-height:55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float:inline-end;
+    position:fixed;
+    left: 1160px;
+    margin-top:130px;
+}
+#menu a:hover {
+    color:#86a283;
+}
+
+/*pesquisa*/
+.pesquisa {
+    color:rgb(40, 55, 40);
+    text-align:left;
+    padding:5px;
+    border: solid 1px #86a283;
+    width: 30%;
+    border-radius:10px;
+    margin: 5px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#ok{
+    color:rgb(40, 55, 40);
+    float:right
+}
+
+/*corpo*/
+
+h3 {
+    color:rgb(40, 55, 40);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/*rodape*/
+footer {
+    font-size: 13px;
+    color: rgb(40, 55, 40);
+    clear:both;
+    background-color: #86a283;
+}
