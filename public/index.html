@@ -6,181 +6,204 @@
     <title>Sempre Gostoso</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
 
-<!--cabeçalho-->
+    <!--cabeçalho-->
 
-    <header class="cabeçalho">
-
-        <div><img id="logo" src="/public/imgs/S.png" alt="Logo"></div>
+    <header id ="cabecalho">
+        <div class="top">
+        <div><img id="logo" src="/public/imgs/LogoReceitas.png" alt="Logo"></div>
 
         <nav>
-            <ul>
-                <li><a href="#">Quem Somos</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contatos</a></li>
-                <li><a href="#">Patricinadores</a></li>
-            </ul>
-        </nav>
-
-    </header>
-        <!--Botao de voltar-->
-        <button class="voltar">
-            <- 
-        </button>
-
-<!--lateral direita-->
-    <aside>
-    <!--botao da sidebar-->
-        <button class="abrirLateral">
-            |||
-        </button>
-        <div id="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times-circle"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Minhas Receitas</a></li>
                 <li><a href="#">Curtidas</a></li>
                 <li><a href="#">Seguindo</a></li>
                 <li><a href="conta.html">Conta</a></li>
                 <li><a href="#">Opções</a></li>
             </ul>
+        </nav>
         </div>
-    </aside>
+    </header>
 
-<!--Corpo-->
-    <main>
-        <img class="imagemPrincipal" src="/public/imgs/sempregostoso.png" alt="imagemPrincipal">
-        <p class="descricao">Descubra e compartilhe receitas incríveis!</p>
-<!--Caixa de pesquisa-->
-<nav class="pesquisa">
-    Pesquisa...
-    <input type="text" name="Pesquisa" value=""><button id="ok">Ok</button>
-</nav>
+            <!--lateral direita-->
+            <aside id="informacoes">
+                <div>
+                    <input type="checkbox" id="infoToggle">
+                    <label for="infoToggle" class="info-icon">
+                        <i class="fa-solid fa-question"></i>
+                        <i class="fa fa-times-circle"></i>
+                    </label>
+                    <ul class="info">
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Contatos</a></li>
+                        <li><a href="#">Patricinadores</a></li>
+                    </ul>
+                </div>
+            </aside>
 
-<!--recomendados-->
-    <h3>Recomendados</h3>
-    <section class="recomendados">
-        <div id="pudim">
-            <p>
-                <img src="https://static.itdg.com.br/images/640-440/d1307a2e17cda187df76b78cfd3ac464/shutterstock-2322251819-1-.jpg"
-                    alt="pudim">
-                <h5>Pudim de Leite Condensado</h5>
-                Clássico e maravilhoso!
-            </p>
-        </div>
-        <div id="bolo">
-            <p>
-                <img src="https://static.itdg.com.br/images/360-240/d290bc79bcad112ee9095604e45eb262/365326-original.jpg"
-                    alt="bolo">
-                <h5>Bolo de Cenoura com Chocolate</h5>
-                O sabor tradicional! 
-            </p>
-        </div>
-        <div id="risoto">
-            <p>
-                <img src="https://static.itdg.com.br/images/640-440/2c635e7afff82ecce4ecd17e941370ed/shutterstock-2185139521-1-.jpg"
-                    alt="risoto">
-                <h5>Risoto de Filé Mignon</h5>
-                O passo a passo perfeito! 
-            </p>
-        </div>
-        <div id="batata">
-            <p>
-                <img src="https://static.itdg.com.br/images/auto-auto/4e8080b2ebe268e1c22cecb1240b9c67/batata.jpg"
-                    alt="batata">
-                <h5>Batata Rústica</h5>
-                A crocância ideal!
-           </p>
-        </div>
-    </section>
-<!--assistidos-->
-    <h3>Assistidos</h3>
-    <article class="assistidos">
-        <div id="musse">
-            <p>
-                <img src="https://static.itdg.com.br/images/360-240/8fed8f60d3c8e3990396e2478cbc7f2a/shutterstock-1905617575-1-.jpg"
-                    alt="musse">
-                <h5>Musse de Maracujá</h5>
-                Rádido e fácil!
-            </p>
-        </div>
-        <div id="macarrao">
-            <p>
-                <img src="https://static.itdg.com.br/images/1200-675/108cb886572a98cb7d90372c5a799ff0/353778-original.jpg"
-                    alt="macarrao">
-                <h5>Macarrão ao Molho Branco</h5>
-                Cremoso e saboroso!
-            </p>
-        </div>
-        <div id="brigadeiro">
-            <p>
-                <img src="https://static.itdg.com.br/images/auto-auto/996ba9fa5378d178e7188e2990734527/shutterstock-1962997534-editado.jpeg"
-                    alt="brigadeiro">
-                <h5>Brigadeiro de Leite Ninho</h5>
-                Com poucos ingredientes!
-            </p>
-        </div>
-        <div id="pave">
-            <p>
-                <img src="https://static.itdg.com.br/images/640-440/543ffeb02eaaa8dfe47ab5042b65a908/253792-354452-original-1-.jpeg"
-                    alt="pave">
-                <h5>Pavê de Chocolate</h5>
-                A sobremesa perfeita!
-            </p>
-        </div>
-    </article>
+            <!--Corpo-->
+            <main>
+                <img class="imagemPrincipal" src="/public/imgs/PrincipalReceitas.png" alt="imagemPrincipal">
+                <p class="descricao">Descubra e compartilhe receitas incríveis!</p>
+                <!--Caixa de pesquisa-->
+                <form action="do_pesquisa" method="">
+                    <nav class="pesquisa">
+                        Pesquisa...
+                        <input type="text" name="Pesquisa" value=""><button id="ok">Ok</button>
+                    </nav>
+                </form>
 
-<!--mais recentes-->
-<h3>Mais Recentes</h3>
-<article class="recentes">
-    <div id="recentes1">
-        <p>
-            <img src="https://static.itdg.com.br/images/640-440/6f3fa334b967ea30ad29ecf955afe989/323486-original.jpg"
-                alt="galinhada">
-            <h5>Galinhada</h5>
-            O tempero ideal!
-        </p>
-    </div>
-    <div id="recentes2">
-        <p>
-            <img src="https://static.itdg.com.br/images/640-440/64c44424862fd2c90989167ff9bd42b2/324166-original.jpg"
-                alt="almondega">
-            <h5>Almondega</h5>
-            Suculenta e macia!
-        </p>
-    </div>
-    <div id="recentes3">
-        <p>
-            <img src="https://static.itdg.com.br/images/640-440/a4eb3e484cd0307edfb3b5717a65d2c6/frango-assado.jpg"
-                alt="frango">
-            <h5>Frango assado com batata</h5>
-            Dourado e saboroso!
-        </p>
-    </div>
-    <div id="recentes4">
-        <p>
-            <img src="https://static.itdg.com.br/images/640-440/c850a535e8de2a4793622a50a858a6d3/shutterstock-1488059969.jpg"
-                alt="cookie">
-            <h5>Cookie com gotas de chocolate</h5>
-            Crocante e doce na medida!
-        </p>
-    </div>
-    <div id="banner">
-        <p>
-        <img src="/public/imgs/bannerCulinaria.png" alt="banner">
-        </p>
-    </div>
-</article>
+                <!--recomendados-->
+                <h3>Recomendados</h3>
+                <section class="recomendados">
+                    <div id="recomendado">
+                        <p>
+                            <img src="https://static.itdg.com.br/images/640-440/d1307a2e17cda187df76b78cfd3ac464/shutterstock-2322251819-1-.jpg"
+                                alt="pudim">
+                        <h5>Pudim de Leite Condensado</h5>
+                        Clássico e maravilhoso!
+                        </p>
+                    </div>
+                    <div id="recomendado">
+                        <p>
+                            <img src="https://static.itdg.com.br/images/360-240/d290bc79bcad112ee9095604e45eb262/365326-original.jpg"
+                                alt="bolo">
+                        <h5>Bolo de Cenoura com Chocolate</h5>
+                        O sabor tradicional!
+                        </p>
+                    </div>
+                    <div id="recomendado">
+                        <p>
+                            <img src="https://static.itdg.com.br/images/640-440/2c635e7afff82ecce4ecd17e941370ed/shutterstock-2185139521-1-.jpg"
+                                alt="risoto">
+                        <h5>Risoto de Filé Mignon</h5>
+                        O passo a passo perfeito!
+                        </p>
+                    </div>
+                    <div id="recomendado">
+                        <p>
+                            <img src="https://static.itdg.com.br/images/auto-auto/4e8080b2ebe268e1c22cecb1240b9c67/batata.jpg"
+                                alt="batata">
+                        <h5>Batata Rústica</h5>
+                        A crocância ideal!
+                        </p>
+                    </div>
+                </section>
+                <!--assistidos-->
+                <h3>Assistidos</h3>
+                <article class="assistidos">
+                    <div id="musse">
+                        <p>
+                            <img src="https://static.itdg.com.br/images/360-240/8fed8f60d3c8e3990396e2478cbc7f2a/shutterstock-1905617575-1-.jpg"
+                                alt="musse">
+                        <h5>Musse de Maracujá</h5>
+                        Rádido e fácil!
+                        </p>
+                    </div>
+                    <div id="macarrao">
+                        <p>
+                            <img src="https://static.itdg.com.br/images/1200-675/108cb886572a98cb7d90372c5a799ff0/353778-original.jpg"
+                                alt="macarrao">
+                        <h5>Macarrão ao Molho Branco</h5>
+                        Cremoso e saboroso!
+                        </p>
+                    </div>
+                    <div id="brigadeiro">
+                        <p>
+                            <img src="https://static.itdg.com.br/images/auto-auto/996ba9fa5378d178e7188e2990734527/shutterstock-1962997534-editado.jpeg"
+                                alt="brigadeiro">
+                        <h5>Brigadeiro de Leite Ninho</h5>
+                        Com poucos ingredientes!
+                        </p>
+                    </div>
+                    <div id="pave">
+                        <p>
+                            <img src="https://static.itdg.com.br/images/640-440/543ffeb02eaaa8dfe47ab5042b65a908/253792-354452-original-1-.jpeg"
+                                alt="pave">
+                        <h5>Pavê de Chocolate</h5>
+                        A sobremesa perfeita!
+                        </p>
+                    </div>
+                </article>
+
+                <!--mais recentes-->
+                <h3>Mais Recentes</h3>
+                <article class="recentes">
+                    <div id="recente1">
+                        <p>
+                            <img src="https://static.itdg.com.br/images/640-440/6f3fa334b967ea30ad29ecf955afe989/323486-original.jpg"
+                                alt="galinhada">
+                        <h5>Galinhada</h5>
+                        O tempero ideal!
+                        </p>
+                    </div>
+                    <div id="recente1">
+                        <p>
+                            <img src="https://static.itdg.com.br/images/640-440/64c44424862fd2c90989167ff9bd42b2/324166-original.jpg"
+                                alt="almondega">
+                        <h5>Almondega</h5>
+                        Suculenta e macia!
+                        </p>
+                    </div>
+                    <div id="recente2">
+                        <p>
+                            <img src="https://static.itdg.com.br/images/640-440/a4eb3e484cd0307edfb3b5717a65d2c6/frango-assado.jpg"
+                                alt="frango">
+                        <h5>Frango assado com batata</h5>
+                        Dourado e saboroso!
+                        </p>
+                    </div>
+                    <div id="recente2">
+                        <p>
+                            <img src="https://static.itdg.com.br/images/640-440/c850a535e8de2a4793622a50a858a6d3/shutterstock-1488059969.jpg"
+                                alt="cookie">
+                        <h5>Cookie com gotas de chocolate</h5>
+                        Crocante e doce na medida!
+                        </p>
+                    </div>
+                    <div id="recente3">
+                        <p>
+                            <img src="https://static.itdg.com.br/images/640-440/c850a535e8de2a4793622a50a858a6d3/shutterstock-1488059969.jpg"
+                                alt="cookie">
+                        <h5>Cookie com gotas de chocolate</h5>
+                        Crocante e doce na medida!
+                        </p>
+                    </div>
+                    <div id="recente3">
+                        <p>
+                            <img src="https://static.itdg.com.br/images/640-440/c850a535e8de2a4793622a50a858a6d3/shutterstock-1488059969.jpg"
+                                alt="cookie">
+                        <h5>Cookie com gotas de chocolate</h5>
+                        Crocante e doce na medida!
+                        </p>
+                    </div>
+                    <div id="banner">
+                        <p>
+                            <img src="/public/imgs/bannerReceitas.png" alt="banner">
+                        </p>
+                    </div>
+                </article>
 
 
-    </main>
 
-<!--rodape-->
-    <footer class="rodape">
-        Confira nossas redes!<br><a href="#"> Instagram </a><br><a href="#"> TikTok </a>
-    </footer>
+            </main>
+
+            <!--rodape-->
+            <footer class="rodape">
+                Confira nossas redes!<br><a href="#"> Instagram </a><br><a href="#"> TikTok </a>
+            </footer>
 
 </body>
 
